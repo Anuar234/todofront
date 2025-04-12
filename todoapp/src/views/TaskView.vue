@@ -28,3 +28,26 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'TaskView',
+    data() {
+        return {
+            tasks: [],
+            newTask: ''
+        },
+        async mounted() {
+            await this.fetchTasks()
+        },
+        methods: {
+            async fetchTasks() {
+                try {
+                    const tg_user = window.Telegram.WebApp.initDataUnsafe?.user
+                    
+                }
+            }
+        }
+    }
+}
+</script>
